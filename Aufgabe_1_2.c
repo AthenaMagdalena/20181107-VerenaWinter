@@ -1,24 +1,19 @@
-// Verena Winter
+//Verena Winter
 #include <stdio.h>
 
-int Zahl=0;
+int n = 0;
 
-   double readBarrier(){
-       double a_value= 0.0;
-    printf("Bitte geben Sie eine positive_Ganz_Zahl ein: ");
-    scanf("%lf", &a_value);
-    return a_value;
-   }
-   double printSequence(){
-    for(int i=1; i<= Zahl; i++) {
-        printf("%lf\n", printSequence);
-    }
-    return printSequence;
-   }
-   
-int main(int argc, char** argv) {
-  int n=0;
-  n = readBarrier();
-  printSequence(n);
-  return 0;
+int readBarrier() {
+  printf ("Bitte geben Sie eine positive Ganze-Zahl ein: ");
+  scanf ("%d", &n);
 }
+int printSequence() {
+    for (int i = 1; i <= n; i++)
+    printf (" %d\n", i);
+    return n;
+}
+int main(int argc, char **argv) {
+  int n = readBarrier ();
+  printSequence ();
+}
+
